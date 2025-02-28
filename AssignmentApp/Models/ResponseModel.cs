@@ -1,10 +1,12 @@
-﻿namespace AssignmentApp.Models;
+﻿using AssignmentApp.Enums;
+
+namespace AssignmentApp.Models;
 
 public class ResponseModel
 {
-    public long Id { get; set; }
+    public string Id { get; set; }
 
     public CardInfoModel CardInfo { get; set; } = new();
 
-    public string Status { get; set; } = "Failed";
+    public Status Status { get; set; } = Status.Failed;
 }
